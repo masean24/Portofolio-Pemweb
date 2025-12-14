@@ -1,0 +1,229 @@
+/* BAGIAN 1: GLOBAL & RESET*/
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+body {
+    background-color: #1e293b; 
+    color: white;              
+    padding-top: 80px;         
+    padding-bottom: 50px;      
+}
+
+a {
+    text-decoration: none;     
+    color: inherit;           
+}
+
+/* BAGIAN 2: NAVBAR (MENU NAVIGASI) */
+nav {
+    background-color: #212529;
+    position: fixed;          
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 3px solid #0d6efd; 
+    z-index: 1000;             
+}
+
+.nav-container {
+    display: flex;             
+    justify-content: center;
+    gap: 20px;                 
+}
+
+.nav-link {
+    color: #ccc;
+    font-weight: 500;
+    transition: color 0.3s;    
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffc107;            
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px;          
+    margin: 0 auto;            
+    padding: 20px;
+}
+
+/* Style Kotak Putih (Card) */
+.card {
+    background-color: white;
+    color: #333;               
+    border-radius: 10px;       
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+}
+
+/* Style Tombol (Button) */
+.btn, .btn-submit {
+    display: inline-block;
+    background-color: #0d6efd; 
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover, .btn-submit:hover {
+    background-color: #0b5ed7; 
+}
+
+h3 {
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #212529;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* --- A. HOME (FOTO PROFIL) --- */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;         
+    border-radius: 50%;        
+    border: 4px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-box {
+    background-color: #cff4fc; 
+    color: #055160;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    display: flex;             
+    align-items: center;
+    gap: 15px;
+}
+
+/* --- B. LAPORAN (VIDEO & PDF) --- */
+.media-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.media-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* --- C. GALERI (GRID) --- */
+.gallery-grid {
+    display: grid;             
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+}
+
+.gallery-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* --- D. JADWAL (TABEL) --- */
+.table-responsive {
+    overflow-x: auto;          
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+}
+
+th {
+    background-color: #212529; /* Header tabel warna gelap */
+    color: white;
+}
+
+/* Warna-warni sel tabel */
+.bg-primary-light { background-color: #cfe2ff; }
+.bg-secondary-light { background-color: #e2e3e5; }
+.bg-success-light { background-color: #d1e7dd; }
+.bg-warning-light { background-color: #fff3cd; }
+.bg-info-light { background-color: #cff4fc; }
+.bg-danger-light { background-color: #f8d7da; }
+
+/* --- E. KONTAK (FORM & SOSMED) --- */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    width: 100%;               
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.social-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;        /* Tombol sosmed bulat */
+    border: 1px solid;
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+
+.social-ig, .social-yt { color: #dc3545; border-color: #dc3545; }
+.social-in { color: #0d6efd; border-color: #0d6efd; }
+.social-btn:hover { background-color: #eee; }
+
