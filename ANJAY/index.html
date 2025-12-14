@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Raihan Daris Ramadhan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #1e293b; min-height: 100vh; padding-bottom: 50px; }
+        .profile-img { width: 150px; height: 150px; object-fit: cover; border: 4px solid white; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        /* Active Link Color */
+        .navbar-dark .navbar-nav .nav-link.active { color: #ffc107; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR (Menu Navigasi) -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top shadow border-bottom border-primary">
+        <div class="container justify-content-center">
+            <ul class="navbar-nav gap-2 flex-row">
+                <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="article.html"><i class="fas fa-file-alt"></i> Laporan</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeri.html"><i class="fas fa-palette"></i> Galeri</a></li>
+                <li class="nav-item"><a class="nav-link" href="jadwal.html"><i class="fas fa-calendar-alt"></i> Jadwal</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- KONTEN HOME -->
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg border-0 mt-4">
+                    <div class="card-body p-5 text-justify">
+                        <!-- Ganti src ini dengan "asset/img/foto-profil.jpg" jika sudah ada di folder -->
+                        <img src="asset/img/Ava.png" class="rounded-circle profile-img mb-4 d-block mx-auto" alt="Foto Profil">
+                        
+                        <h3 class="fw-bold text-dark">Halo, Saya Raihan Daris Ramadhan! 👋</h3>
+                        <hr>
+                        <p class="mb-4">Saya adalah mahasiswa Teknik Informatika di Institut Teknologi PLN yang memiliki ketertarikan besar terhadap dunia teknologi dan perkembangannya. 
+                            Saya sangat antusias dalam mempelajari berbagai hal yang berkaitan dengan teknologi, terutama di bidang pemrograman dan pengembangan sistem.</p>
+                        <p class="mb-4">Selain itu, saya memiliki hobi mendengarkan musik, bermain game, serta mengisi waktu luang dengan mempelajari pemrograman untuk menambah wawasan dan mengasah kemampuan teknis yang saya miliki.</p>
+
+                        <div class="alert alert-info border-0 shadow-sm text-start d-flex align-items-center" role="alert">
+                            <i class="fas fa-lightbulb fa-2x me-3"></i>
+                            <div><strong>Fun Fact:</strong> Penasaran dengan cara kerja suatu sistem sampai harus mencoba dan mengutak-atiknya sendiri!</div>
+                        </div>
+
+                        <a href="article.html" class="btn btn-primary btn-lg mt-3 shadow">
+                            Lihat Artikel Saya <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="text-center text-white-50 mt-4 small">&copy; 2025 Raihan Daris Ramadhan</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
